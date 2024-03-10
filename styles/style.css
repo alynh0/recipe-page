@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --primary-font: "Young Serif", serif;
+  --secondary-font: "Outfit", sans-serif;
+
+  --preparation-color: hsl(332, 51%, 32%);
+  --subtitle-color: hsl(14, 45%, 36%);
+  --terciary-color: hsl(0, 0%, 100%);
+  --background-color: hsl(30, 54%, 90%);
+  --black-color: hsl(0, 0%, 0%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  font-family: var(--secondary-font);
+  background-color: var(--background-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe {
+  width: 50%;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 1rem;
+
+  background-color: var(--terciary-color);
+}
+
+.recipe__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.recipe__title {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+}
+
+.preparation {
+  background-color: hsla(332, 51%, 32%, 0.2);
+  padding: 1.5rem;
+}
+
+.preparation__title {
+  font-size: 1.5rem;
+  color: var(--preparation-color);
+}
+
+.preparation__list {
+  list-style-position: inside;
+}
+
+.preparation__list__item {
+  font-size: 1.1rem;
+  padding: 1rem 0.5rem 0rem 1rem;
+}
+
+.preparation__list__item::marker {
+  color: var(--preparation-color);
+}
+
+.preparation__list__item span {
+  font-weight: 600;
+}
+
+.recipe__subtitle {
+  font-size: 1.5rem;
+  color: var(--subtitle-color);
+}
+
+.instructions {
+  border-top: 1px solid var(--black-color);
+  margin-top: 2rem;
+}
