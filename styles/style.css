@@ -27,6 +27,7 @@ main {
   justify-content: center;
 }
 
+/* Recipe */
 .recipe {
   width: 50%;
   padding: 2rem;
@@ -41,11 +42,23 @@ main {
   border-radius: 1rem;
 }
 
+.recipe__description {
+  font-size: 1.1rem;
+  padding: 0 0 1.5rem 0;
+}
+
 .recipe__title {
   font-family: var(--primary-font);
   font-size: 2rem;
+  padding: 1rem 0;
 }
 
+.recipe__subtitle {
+  font-size: 1.5rem;
+  color: var(--subtitle-color);
+}
+
+/* Preparation */
 .preparation {
   background-color: hsla(332, 51%, 32%, 0.2);
   padding: 1.5rem;
@@ -73,12 +86,95 @@ main {
   font-weight: 600;
 }
 
-.recipe__subtitle {
+.ingredients__subtitle {
+  font-family: var(--primary-font);
   font-size: 1.5rem;
   color: var(--subtitle-color);
+  padding: 1rem 0;
 }
 
+.ingredients__list {
+  list-style-position: inside;
+}
+
+.ingredients__list__item {
+  font-size: 1.1rem;
+  padding: 1rem 0.5rem 0rem 1rem;
+}
+
+.ingredients__list__item::marker {
+  color: var(--preparation-color);
+}
+
+/* Instructions */
 .instructions {
-  border-top: 1px solid var(--black-color);
+  border-top: 1px solid var(--background-color);
   margin-top: 2rem;
+}
+
+.instructions__subtitle {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  color: var(--subtitle-color);
+  padding: 2rem 0 1rem 0;
+}
+
+.instructions__list {
+  list-style-position: inside;
+}
+
+.instructions__list__item {
+  font-size: 1.1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.instructions__list__item::marker {
+  color: var(--preparation-color);
+  font-weight: 600;
+}
+
+.instructions__list__item span {
+  font-weight: 600;
+}
+
+/* Nutrition */
+.nutrition {
+  border-top: 1px solid var(--background-color);
+  margin-top: 2rem;
+}
+
+.nutrition__subtitle {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  color: var(--subtitle-color);
+  padding: 2rem 0 1rem 0;
+}
+
+.nutrition__description {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.nutrition th {
+  padding: 1rem 0 1rem 1rem;
+  font-weight: 400;
+}
+
+.nutrition td {
+  font-weight: 900;
+  color: var(--preparation-color);
+}
+
+.nutrition tr {
+  border-bottom: 1px solid var(--background-color);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
 }
